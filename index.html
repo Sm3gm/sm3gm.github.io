@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sm3gm — game mods and small tools</title>
+<meta name="description" content="Free, open mods and small tools for PC games. Independent hobby project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#13232b;
+    --panel:#1b303a;
+    --line:#2b4653;
+    --text:#e8edec;
+    --dim:#93aab3;
+    --gold:#edb458;
+    --teal:#6fc0ac;
+    --display:"Space Grotesk",system-ui,sans-serif;
+    --body:"IBM Plex Sans",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--text);
+    font-family:var(--body);
+    font-size:17px;
+    line-height:1.65;
+  }
+  .wrap{max-width:44rem;margin:0 auto;padding:3rem 1.5rem 5rem}
+  a{color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(111,192,172,.35)}
+  a:hover{border-bottom-color:var(--teal)}
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+ 
+  .handle{
+    font-family:var(--display);font-weight:700;font-size:.95rem;
+    letter-spacing:.01em;color:var(--dim);margin:0 0 3.5rem;
+  }
+ 
+  h1{
+    font-family:var(--display);font-weight:700;
+    font-size:clamp(2.1rem,6vw,3.1rem);
+    line-height:1.08;letter-spacing:-.02em;
+    margin:0 0 1.5rem;max-width:16ch;
+  }
+  .lede{font-size:1.1rem;color:var(--text);margin:0 0 1rem;max-width:60ch}
+  .lede-2{color:var(--dim);margin:0 0 4rem;max-width:60ch}
+ 
+  h2{
+    font-family:var(--display);font-weight:500;font-size:1.15rem;
+    letter-spacing:.01em;margin:0 0 1.5rem;color:var(--text);
+  }
+  section{margin-bottom:4rem}
+ 
+  .project{
+    display:grid;grid-template-columns:9rem 1fr;gap:0 1.5rem;
+    padding:1.4rem 0;border-top:1px solid var(--line);
+  }
+  .project:last-of-type{border-bottom:1px solid var(--line)}
+  .for-game{color:var(--dim);font-size:.9rem;padding-top:.15rem}
+  .project h3{
+    font-family:var(--display);font-weight:500;font-size:1.05rem;
+    margin:0 0 .3rem;
+  }
+  .project p{margin:0 0 .5rem;color:var(--dim);font-size:.97rem}
+  .project .links{font-size:.92rem}
+  .project .links a + a{margin-left:1.1rem}
+  .status{color:var(--gold);font-size:.92rem}
+ 
+  .support{
+    background:var(--panel);border:1px solid var(--line);
+    border-radius:10px;padding:1.75rem;
+  }
+  .support p{margin:0 0 1.5rem;color:var(--dim);max-width:52ch}
+  .buttons{display:flex;flex-wrap:wrap;gap:.75rem}
+  .btn{
+    font-family:var(--display);font-weight:500;font-size:1rem;
+    background:var(--gold);color:#13232b;
+    padding:.7rem 1.35rem;border-radius:6px;border:none;
+    display:inline-block;
+  }
+  .btn:hover{background:#f5c473;border:none}
+  .btn.secondary{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+  .btn.secondary:hover{background:rgba(237,180,88,.12)}
+ 
+  .fine{border-top:1px solid var(--line);padding-top:2rem;color:var(--dim);font-size:.92rem}
+  .fine p{margin:0 0 .8rem;max-width:60ch}
+  .fine strong{color:var(--text);font-weight:500}
+ 
+  @media (max-width:34rem){
+    .project{grid-template-columns:1fr;gap:.35rem}
+    .for-game{padding-top:0}
+    .btn{width:100%;text-align:center}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+ 
+  <p class="handle">sm3gm</p>
+ 
+  <h1>Free mods and small tools for PC games.</h1>
+ 
+  <p class="lede">I build modifications for games I play — mostly quality-of-life fixes and content additions that the base game left out. Everything here is free to download and free to use.</p>
+  <p class="lede-2">Independent hobby project, run by one person from Norway. No company behind it, no paid tiers, nothing locked away.</p>
+ 
+  <section>
+    <h2>Projects</h2>
+ 
+    <div class="project">
+      <div class="for-game">Shadows of Doubt</div>
+      <div>
+        <h3>Vanilla Sync Disk Split</h3>
+        <p>Splits every multi-branch sync disk into individual installable disks, so you can take one upgrade path without buying the whole tree.</p>
+        <p class="links"><span class="status">In testing</span></p>
+      </div>
+    </div>
+ 
+    <div class="project">
+      <div class="for-game">Shadows of Doubt</div>
+      <div>
+        <h3>Sync Disk Pack</h3>
+        <p>New sync disks covering abilities the base game never exposed — movement speed, jump height and inventory capacity among them.</p>
+        <p class="links"><span class="status">In testing</span></p>
+      </div>
+    </div>
+ 
+    <div class="project">
+      <div class="for-game">Shadows of Doubt</div>
+      <div>
+        <h3>Note Stamp</h3>
+        <p>One keypress stamps the current date, time, location and the person you're talking to onto an open case board note. Saves a lot of typing on a controller.</p>
+        <p class="links"><span class="status">In testing</span></p>
+      </div>
+    </div>
+ 
+  </section>
+ 
+  <section>
+    <h2>Support the work</h2>
+    <div class="support">
+      <p>If something here saved you an evening of frustration and you'd like to put something in the tip jar, both of these go to the same person.</p>
+      <div class="buttons">
+        <a class="btn" href="https://buymeacoffee.com/YOURHANDLE">Buy me a coffee</a>
+        <a class="btn secondary" href="https://ko-fi.com/YOURHANDLE">Support on Ko-fi</a>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="fine">
+    <p><strong>What your support does and doesn't buy.</strong> Contributions are entirely voluntary tips. They are not a purchase — no goods, services, files, early access, exclusive content or support obligations are provided in return, and nothing here is ever placed behind a payment. Every mod stays free to everyone whether or not anyone contributes.</p>
+    <p><strong>Refunds.</strong> If you contributed by mistake or changed your mind, email me and I'll refund it. Payments are handled by Buy Me a Coffee and Ko-fi; I never see or store your card details.</p>
+    <p><strong>Contact.</strong> <a href="mailto:sm3gm@proton.me">sm3gm@proton.me</a> — for bug reports, questions, or anything to do with a contribution.</p>
+    <p><strong>Location.</strong> Operated as an individual from Norway. Contributions are processed in the currency shown at checkout.</p>
+    <p>Game names and trademarks belong to their respective owners. This site is not affiliated with, endorsed by, or sponsored by any game developer or publisher.</p>
+  </section>
+ 
+</div>
+</body>
+</html>
